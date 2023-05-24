@@ -5,20 +5,18 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>DEGREY-VIETNAM</title>
-     <!-- <link rel="stylesheet" href="./resposive.css"> -->
-     <!-- <link rel="stylesheet" href="./javascript/slideshow.css"> -->
      <link rel="stylesheet" href="./css/style.css">
-     <link rel="stylesheet" href="./css/body.css">
-     <link rel="stylesheet" href="./css/card.css">
+     <link rel="stylesheet" href="./css/payment.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.css" integrity="sha512-CryoDyteYMNouaijFq0IkXMmnZ2bySpcztTr0/1rJ8oUnAV6ndCkK+QXEaHicv4dXTCgtZS+/RGCXR4XDy1DFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"> -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+     
 </head>
 <body>
     <section class="header">
@@ -26,8 +24,8 @@
                 <label for="nav_mobile_input" class="nav_mobile_button" ><i class="bi bi-list"></i></label>
               <a href=""><img class="logo" src="./picture/logo.webp" alt="Degrey vietnam"></a>
                 <div class="link_header">
-                  <a href="../Home/index.html"> Trang chủ</a>
-                  <a href=""><b>Sản phẩm </b></a>
+                  <a href=""> Trang chủ  </a>
+                  <a href="./index.html">Sản phẩm</a>
                   <a href="">Store</a>
                   <a href="">Giới Thiệu</a>
                 </div>
@@ -65,44 +63,93 @@
             </nav>
 
     </section>
-    <section class="main_product">
-        <img class="main_cover" width="70%" src="./picture/cover_shop.webp" alt="cover">
-        <div class="menu_product">
-          <div class="menu">
-            <button><a href="#balo_croll"><h2>Balo - Túi</h2></a></button>
-            <button><a href="#ring_croll"><h2>Trang sức</h2></a></button>
-
-          </div>
-         </div>
-          <div class="list_product">
-            <h2 id="balo_croll"> Balo - Túi xách </h2>
-            <div class="product_clothes" id="balo">
-               
-              
-
-            </div>
+    <section class="main_payment">
+       <h1>Giỏ hàng của bạn</h1>
+       <div class="main_content">
+        <p>Bạn đang có <b>( <span class="quantity_in_cart">0</span> )</b> sản phẩm trong giỏ hàng </p>
+          <div class="item_container" >
             
-            <h2 id="ring_croll"> Trang sức </h2>
-            <div class="product_clothes"  id="trangsuc">
-
-
-              </div>
-
-            </div>
+            <div class="item_render">
+                
+                <!-- nơi render item  -->
+             </div>
              
+             <div class="infor">
+                
+                     <div class="infor_customer">
+                       
+                        <div class="name_cus">
+                            <h4>Họ tên:</h4>
+                            <input type="text">
+                          </div>
+                          <div class="mail_tel">
+                            <div class="tel_cus">
+                                <h4>Số điện thoại:</h4>
+                                <input type="text">
+                              </div>
+                              <div class="email_cus">
+                                <h4>Email:</h4>
+                                <input type="text">
+                              </div>
+
+                          </div>
+                         
+                           
+                                                     
+                           <div class="address_cus">
+                            <h4>Địa chỉ giao hàng:</h4>
+                            <input type="text"><br> <br>
+                            <select class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+                                <option value="" selected>Chọn tỉnh thành</option>           
+                                </select>
+                                          
+                                <select class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
+                                <option value="" selected>Chọn quận huyện</option>
+                                </select>
+                                
+                                <select class="form-select form-select-sm" id="ward" aria-label=".form-select-sm"> 
+                                <option value="" selected>Chọn phường xã</option>
+                                </select>
+                          
+
+                           </div>
+
+                     </div>
+                          
+                           <div class="sumit_payment">
+                               <h1>Thông tin đơn hàng</h1>
+                                <div class="total_payment">
+                                   <h4>Tổng tiền </h4>
+                                   <h1 class="prire_payment">0</h1>
+
+                                </div>
+                    
+                                  <button>Thanh Toán</button>
+                                <div>
+                                  <h3>Chính sách giao hàng</h3>
+                                   <p>Hiện chúng tôi chỉ áp dụng thanh toán với đơn hàng có giá trị tối thiểu <b>150.000₫ </b> trở lên.</p>
+
+                                </div>
+
+                           </div> 
+                        
+                  
+                  
+                        
+                
+             </div>
+                  
+            
+            
+          </div>
+          <div>
 
           </div>
-          <div class="card">
-            <h1>Giỏ hàng (<span class="quantity_in_cart"> 0 </span>)</h1>
-            <div class="cart-items">
 
-            </div>
-            <div class="checkOut">
-                <div class="total">0</div>
-                <div class="thanh_toan"> <a href="./payment.html"> Thanh toán</a></div>
-                <div class="closeShopping">Đóng</div>
-            </div>
-        </div>
+
+       </div>
+
+      
             
         
 
@@ -193,9 +240,9 @@
 
     </div>
 
-     <script src="./js/card.js"></script>
-     <script src="./js/index.js"></script>
-     <script src="./js/storage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+     
+     <script src="js/payment.js"></script>
 
 </html>
 

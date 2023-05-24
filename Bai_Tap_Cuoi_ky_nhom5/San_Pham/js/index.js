@@ -101,6 +101,7 @@ function renderSubtotal() {
  
 }
 
+ 
 function renderCartItems() {
   cartItems.innerHTML = "";
   cart.forEach((item) => {
@@ -147,5 +148,6 @@ function changeNumberOfUnits(action, id) {
 
   updateCart();
 }
+
 
 

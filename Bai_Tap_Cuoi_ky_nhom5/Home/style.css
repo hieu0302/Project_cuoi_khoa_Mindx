@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 body{
     min-height: 100vh;
@@ -102,7 +102,7 @@ a{
 .header .nav_pc .search button:hover{
     cursor:pointer;
 }
-.header .nav_pc .cart{
+/* .header .nav_pc .cart{
     text-align: center;
 }
 .header .nav_pc .cart button{
@@ -110,6 +110,35 @@ a{
     background-color: white;
 
 }
+.header .nav_pc .cart p{
+    font-size: 13px;
+} */
+
+.header .nav_pc .cart{
+    text-align: center;
+    position: relative;
+}
+.header .nav_pc .cart button{
+    border: none;
+    background-color: white;
+
+}
+
+.header .nav_pc .cart .quantity{
+    background-color: rgb(180, 3, 3);
+    color: white;
+    width: 20px;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
 .header .nav_pc .cart p{
     font-size: 13px;
 }

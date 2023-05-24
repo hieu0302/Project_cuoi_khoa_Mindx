@@ -1,0 +1,127 @@
+.main_payment{
+    margin: 30px 10%;
+
+}
+
+.infor_customer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infor_customer .mail_tel{
+    display: flex;
+    gap: 20px;
+}
+.infor_customer .name_cus input{
+    width: 500px;
+    height: 40px;
+}
+.infor_customer .mail_tel .email_cus input{
+    width: 198%;
+}
+.infor_customer .address_cus input{
+    width: 41%;
+}
+input{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    outline: none;
+}
+
+select{
+    height: 40px;
+}
+.item_container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.item_render{
+    border: solid #d8d8d8 1px;
+    margin: 15px;
+    border-radius: 10px;
+}
+.infor{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cart-items {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .cart-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .cart-item div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .cart-item .item-info {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.6);
+  
+    border-radius: 0 10px 10px 0;
+  
+    padding: 10px;
+  }
+ .cart-item .del{
+    margin-left: 20px;
+   
+ }
+ .cart-item .del button{
+    border: none;
+    border-radius: 50%;
+    font-weight: 700;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+ }
+ .cart-item .del button:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+ }
+  .cart-item .item-info img {
+    width: 75px;
+  }
+
+  .cart-item .unit-price {
+    flex: 1;
+    font-size: 200;
+    color: rgb(180, 3, 3);
+  }
+
+  .cart-item .units {
+    flex: 1;
+  }
+  .cart-item .units .number {
+    margin: 0 10px;
+  
+    font-size: 1.2rem;
+  }
+  .cart-item .units .btn {
+    width: 20px;
+    height: 20px;
+  
+    background-color: black;
+    color: #fff;
+  
+    border-radius: 50%;
+  
+    font-weight: bold;
+  
+    cursor: pointer;
+  
+    
+  }
