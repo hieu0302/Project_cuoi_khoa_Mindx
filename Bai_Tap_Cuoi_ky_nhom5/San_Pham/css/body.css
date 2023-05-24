@@ -1,0 +1,145 @@
+.main_product .main_cover{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+.main_product .menu_product{
+   
+   position: sticky;
+   top: 100px;
+   background-color: white;
+   padding: 10px;
+   box-shadow: 0 2px 5px #77777769;
+   z-index: 2;
+   
+}
+
+
+.main_product .menu_product .menu{
+  
+   display: flex;
+   justify-content: center;
+   gap: 10%;
+   
+
+  
+}
+
+.main_product .menu_product .menu button {
+   border: none;
+   background-color: white;
+   color: gray;
+ 
+}
+.main_product .menu_product .menu button a{
+   text-decoration: none;
+   color: gray;
+}
+.main_product .menu_product .menu button a:hover{
+   cursor: pointer;
+   color: black;
+   transition: all 0.5s;
+}
+
+.main_product .list_product{
+   margin: 20px 15% ;
+}
+
+.main_product .list_product h2{
+   margin-top: 50px;
+   margin-bottom: 20px;
+   font-size: 26px;
+   
+}
+
+.main_product .list_product .product_clothes {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   
+}
+
+.main_product .list_product .product_clothes .clothes{
+    /* flex-basis: 25%; */
+    text-align: center;
+    /* flex-grow: 1; */
+    margin-bottom: 30px;
+    padding: 9px;
+     
+}
+
+.main_product .list_product .product_clothes .clothes:hover{
+   box-shadow: 0 2px 5px #77777769;
+   transition: 0.5s;
+   transform: scale(1.1);
+  
+}
+
+.main_product .list_product .product_clothes .clothes .infor_clothes{
+   text-align: left;
+   font-weight: bold;
+}
+.main_product .list_product .product_clothes .clothes .infor_clothes p{
+   word-wrap: break-word;
+
+}
+
+.main_product .list_product .product_clothes .clothes .infor_clothes .price{
+    color: rgb(180, 3, 3);
+    margin: 5px;
+}
+
+.main_product .list_product .product_clothes .clothes .infor_clothes button{
+   max-width: 100%;
+   padding: 4px 10px;
+   margin-top: 5px;
+   font-weight: bold;
+   
+}
+
+.main_product .list_product .product_clothes .clothes .infor_clothes button:hover{
+   cursor: pointer;
+   color: white;
+   background-color: black;
+   transition: all 0.5s;
+}
+
+/* .main_product .list_product .product_clothes{
+    
+} */
+
+@media (max-width: 1023px){
+    .main_product .main_cover{
+      width: 95%;
+    }
+    .main_product .list_product{
+      margin: 20px 5% ;
+   }
+   .main_product .list_product .product_clothes{
+      justify-content: space-between;
+   }
+}
+
+@media (max-width: 600px){
+   .main_product .list_product{
+      margin: 20px 2% ;
+   }
+
+   .main_product .list_product .product_clothes{
+      justify-content: space-between;
+   }
+
+   .main_product .list_product .product_clothes .clothes{
+      width: 170px;
+      text-align: center;
+      height: 265px;
+
+  
+  }
+  .main_product .list_product .product_clothes .clothes img{
+       width: 160px;
+  }
+}
+   

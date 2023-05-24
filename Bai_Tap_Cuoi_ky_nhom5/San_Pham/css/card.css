@@ -1,0 +1,153 @@
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: white;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 100;
+    box-shadow: 0 2px 5px #77777769;
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h1{
+    color: black;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+    background-color:white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkOut div:nth-child(1){
+    background-color: #1C1F25;
+    color: #fff;
+}
+.card .checkOut div:nth-child(2){
+    background-color: black;
+    color: #fff;
+}
+
+
+.card .checkOut button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.cart-items {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .cart-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .cart-item div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .cart-item .item-info {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.6);
+  
+    border-radius: 0 10px 10px 0;
+  
+    padding: 10px;
+  }
+ .cart-item .del{
+    margin-left: 20px;
+   
+ }
+ .cart-item .del button{
+    border: none;
+    border-radius: 50%;
+    font-weight: 700;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+ }
+ .cart-item .del button:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+ }
+  .cart-item .item-info img {
+    width: 75px;
+  }
+
+  .cart-item .unit-price {
+    flex: 1;
+    font-size: 200;
+    color: rgb(180, 3, 3);
+  }
+
+  .cart-item .units {
+    flex: 1;
+  }
+  .cart-item .units .number {
+    margin: 0 10px;
+  
+    font-size: 1.2rem;
+  }
+  .cart-item .units .btn {
+    width: 20px;
+    height: 20px;
+  
+    background-color: black;
+    color: #fff;
+  
+    border-radius: 50%;
+  
+    font-weight: bold;
+  
+    cursor: pointer;
+  
+    
+  }
+
+
+  @media (max-width: 500px){
+   .card {
+    width: 400px;
+    
+   }
+
+   .active .card{
+    left: calc(100% - 400px);
+}
+
+
+
+}
