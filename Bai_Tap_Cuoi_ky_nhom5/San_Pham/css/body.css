@@ -109,7 +109,12 @@
 /* .main_product .list_product .product_clothes{
     
 } */
+@media (max-width: 1426px){
+   .main_product .list_product .product_clothes{
+      justify-content:space-around;
+   }
 
+}
 @media (max-width: 1023px){
     .main_product .main_cover{
       width: 95%;
@@ -127,9 +132,6 @@
       margin: 20px 2% ;
    }
 
-   .main_product .list_product .product_clothes{
-      justify-content: space-between;
-   }
 
    .main_product .list_product .product_clothes .clothes{
       width: 170px;
